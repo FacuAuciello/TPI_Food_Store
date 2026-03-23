@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Panel Admin</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Panel del Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ir a la tienda</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Productos</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id producto</th>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hamburgesa Triple Cheddar</td>
+                    <td>Hamburgesas</td>
+                    <td>$12.000</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pizza de Muzzarella</td>
+                    <td>Pizzas</td>
+                    <td>$8.000</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Coca-Cola</td>
+                    <td>Bebidas</td>
+                    <td>$3.000</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Agregar Producto</h2>
+
+        <form>
+            <label for="nombreProducto">Nombre</label>
+            <input type="text" id="nombreProducto" placeholder="Ej: Pizza Napolitana">
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="">Seleccionar categoria</option>
+                <option value="hamburgesas">Hamburgesas</option>
+                <option value="pizzas">Pizzas</option>
+                <option value="bebidas">Bebidas</option>
+            </select>
+            
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" placeholder="Ej: $5.000">
+
+            <label for="descripcion">Descripcion</label>
+            <textarea id="descripcion" placeholder="Descripcion del producto..."></textarea>
+
+            <button type="submit">Guardar Producto</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Food Store &copy; 2026 - Trabajo Practico Integrador</p>
+    </footer>
+</body>
+</html>
